@@ -1,0 +1,17 @@
+{
+  "title": "Willkommen in meinem Portfolio",
+  "bio": "Ich bin Željko Fabek, ein leidenschaftlicher Entwickler und Designer.",
+  "about": "Über mich",
+  "aboutContent": "....About 4....",
+  "projects": "Portfolio",
+  "contact": "Kontakt",
+  "form": {
+    "name": "Name",
+    "email": "E-Mail-Adresse",
+    "message": "Nachricht",
+    "submit": "Senden",
+    "namePlaceholder": "Geben Sie Ihren Namen ein",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "messagePlaceholder": "Geben Sie Ihre Nachricht ein"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Dobrodošli u moj portfelj",
+  "bio": "Ja sam Željko Fabek, strastveni programer i dizajner.",
+  "about": "O meni",
+  "aboutContent": "....About 2....",
+  "projects": "Portfelj",
+  "contact": "Kontakt",
+
+  "form": {
+    "name": "Ime",
+    "email": "Email adresa",
+    "message": "Poruka",
+    "submit": "Pošalji",
+    "namePlaceholder": "Unesite svoje ime",
+    "emailPlaceholder": "Unesite svoju email adresu",
+    "messagePlaceholder": "Unesite svoju poruku"
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "image": "images/150.png",
+    "url": "project.html?id=project1",
+    "translations": {
+      "en": {
+        "title": "Java application",
+        "description": "Creating, Editing the Readme.me file for GitHub."
+      },
+      "hr": {
+        "title": "Java aplikacija",
+        "description": "Izrada, Uređivanje Readme.me datoteke za GitHub."
+      },
+      "sk": {
+        "title": "Java aplikácia",
+        "description": "Vytváranie, úprava súboru Readme.me pre GitHub."
+      },
+      "de": {
+        "title": "Java-Anwendung",
+        "description": "Erstellen und Bearbeiten der Readme.me-Datei für GitHub"
+      }
+    }
+  },
+  {
+    "image": "images/150.png",
+    "url": "project.html?id=project2",
+    "translations": {
+      "en": {
+        "title": "Android application",
+        "description": "list of Rock and roll songs, list of bands, songs and video materials."
+      },
+      "hr": {
+        "title": "Android aplikacija",
+        "description": "popis Rock and roll pjesama, popis bendova, pjesama i video materjali."
+      },
+      "sk": {
+        "title": "Aplikácia pre Android",
+        "description": "zoznam rock and roll skladieb, zoznam kapiel, skladieb a videí."
+      },
+      "de": {
+        "title": "Android-Anwendung",
+        "description": "Liste von Rock’n’Roll-Songs, Liste von Bands, Songs und Videomaterial."
+      }
+    }
+  }
+]

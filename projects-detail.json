@@ -1,0 +1,94 @@
+[
+  {
+    "id": "project1",
+    "screenshots": [
+      "images/300.png",
+      "images/300.png",
+      "images/300.png"
+    ],
+    "translations": {
+      "en": {
+        "title": "Java Application",
+        "h1": "Java Application",
+        "descriptionTitle": "Description",
+        "description": "This is a detailed description of the Java application, including its features, use cases, and benefits.",
+        "keyFeaturesTitle": "Key Features",
+        "keyFeatures": ["Feature 1", "Feature 2", "Feature 3"],
+        "screenshotsTitle": "Additional Screenshots"
+      },
+      "hr": {
+        "title": "Java aplikacija",
+        "h1": "Java aplikacija",
+        "descriptionTitle": "Opis",
+        "description": "Ovo je detaljan opis Java aplikacije, uključujući njezine značajke, upotrebu i prednosti.",
+        "keyFeaturesTitle": "Ključne značajke",
+        "keyFeatures": ["Značajka 1", "Značajka 2", "Značajka 3"],
+        "screenshotsTitle": "Dodatne fotografije"
+      },
+      "sk": {
+        "title": "Java aplikácia",
+        "h1": "Java aplikácia",
+        "descriptionTitle": "Popis",
+        "description": "Toto je podrobný popis Java aplikácie vrátane jej funkcií, použitia a výhod.",
+        "keyFeaturesTitle": "Hlavné funkcie",
+        "keyFeatures": ["Funkcia 1", "Funkcia 2", "Funkcia 3"],
+        "screenshotsTitle": "Dodatočné snímky obrazovky"
+      },
+      "de": {
+        "title": "Java-Anwendung 1",
+        "h1": "Java-Anwendung 1",
+        "descriptionTitle": "Beschreibung",
+        "description": "Dies ist eine detaillierte Beschreibung der Java-Anwendung, einschließlich ihrer Funktionen, Anwendungsfälle und Vorteile.",
+        "keyFeaturesTitle": "Hauptmerkmale",
+        "keyFeatures": ["Besonderheit 1", "Besonderheit 2", "Besonderheit 3"],
+        "screenshotsTitle": "Zusätzliche Screenshots"
+      }
+    }
+  },
+  {
+    "id": "project2",
+    "screenshots": [
+      "images/300.png",
+      "images/300.png",
+      "images/300.png"
+    ],
+    "translations": {
+      "en": {
+        "title": "Java Application 2",
+        "h1": "Java Application 2",
+        "descriptionTitle": "Description",
+        "description": "This is a detailed description of the Java application, including its features, use cases, and benefits.",
+        "keyFeaturesTitle": "Key Features",
+        "keyFeatures": ["Feature 1", "Feature 2", "Feature 3"],
+        "screenshotsTitle": "Additional Screenshots"
+      },
+      "hr": {
+        "title": "Java aplikacija 2",
+        "h1": "Java aplikacija 2",
+        "descriptionTitle": "Opis",
+        "description": "Ovo je detaljan opis Java aplikacije, uključujući njezine značajke, upotrebu i prednosti.",
+        "keyFeaturesTitle": "Ključne značajke",
+        "keyFeatures": ["Značajka 1", "Značajka 2", "Značajka 3"],
+        "screenshotsTitle": "Dodatne fotografije"
+      },
+      "sk": {
+        "title": "Java aplikácia 2",
+        "h1": "Java aplikácia 2",
+        "descriptionTitle": "Popis",
+        "description": "Toto je podrobný popis Java aplikácie vrátane jej funkcií, použitia a výhod.",
+        "keyFeaturesTitle": "Hlavné funkcie",
+        "keyFeatures": ["Funkcia 1", "Funkcia 2", "Funkcia 3"],
+        "screenshotsTitle": "Dodatočné snímky obrazovky"
+      },
+      "de": {
+        "title": "Java-Anwendung 2",
+        "h1": "Java-Anwendung 2",
+        "descriptionTitle": "Beschreibung",
+        "description": "Dies ist eine detaillierte Beschreibung der Java-Anwendung, einschließlich ihrer Funktionen, Anwendungsfälle und Vorteile.",
+        "keyFeaturesTitle": "Hauptmerkmale",
+        "keyFeatures": ["Besonderheit 1", "Besonderheit 2", "Besonderheit 3"],
+        "screenshotsTitle": "Zusätzliche Screenshots"
+      }
+    }
+  }
+]

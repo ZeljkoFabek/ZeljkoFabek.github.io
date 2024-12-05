@@ -1,12 +1,129 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-}
-h1 {
-    color: #0077cc;
-    font-size: 26px;
-}
+    /* Osnovni stilovi za sve uređaje */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .img-circle {
+        width: 180px;
+        height: 180px;
+        object-fit: cover; /* Održava proporcije slike */
+    }
+    
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    #language-selector {
+        margin-top: 20px;
+    }
+    
+    .language-flag {
+        width: 45px;
+        height: 30px;
+        margin: 0 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    
+    .language-flag:hover {
+        transform: scale(1.5);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    /* Stilovi za mobilne uređaje (manje od 576px) */
+    @media (min-width: 300px) and (max-width: 575.98px) {
+        header {
+            text-align: center;
+        }
+        header .row {
+            flex-direction: column; /* Stavlja fotografiju i tekst jedan ispod drugog */
+        }
+        header img {
+            margin-bottom: 20px; /* Dodaj razmak između slike i teksta */
+        }
+        .navbar-nav {
+            text-align: center;
+        }
+        .navbar-nav .nav-item {
+            margin-bottom: 10px;
+        }
+
+        .language-flag {
+            width: 60px;
+            height: 40px;
+            margin: 0 15px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+    }
+    
+    /* Stilovi za tablete (576px do 768px) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        header img {
+            width: 150px;
+            height: 150px;
+        }
+        .navbar-nav {
+            text-align: center;
+        }
+
+        .language-flag {
+            width: 60px;
+            height: 40px;
+            margin: 0 15px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+    }
+    
+    /* Stilovi za laptope (768px do 1024px) */
+    @media (min-width: 768px) and (max-width: 1023.98px) {
+        header img {
+            width: 200px;
+            height: 200px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .language-flag {
+            width: 75px;
+            height: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+    }
+    
+    /* Stilovi za stolna računala (1024px i šire) */
+    @media (min-width: 1024px) {
+        header img {
+            width: 250px;
+            height: 250px;
+        }
+        .card {
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 1200px; /* Ograničava širinu za bolji pregled na velikim ekranima */
+        }
+
+        .language-flag {
+            width: 75px;
+            height: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+    }

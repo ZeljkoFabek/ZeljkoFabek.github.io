@@ -1,0 +1,18 @@
+{
+  "title": "Vitajte v mojom portfóliu",
+  "bio": "Som Željko Fabek, vášnivý programátor a dizajnér.",
+  "about": "O mne",
+  "aboutContent": "....About 3....",
+  "projects": "Portfólio",
+  "contact": "Kontakt",
+
+  "form": {
+    "name": "Meno",
+    "email": "Emailová adresa",
+    "message": "Správa",
+    "submit": "Odoslať",
+    "namePlaceholder": "Zadajte svoje meno",
+    "emailPlaceholder": "Zadajte svoju emailovú adresu",
+    "messagePlaceholder": "Zadajte svoju správu"
+  }
+}
