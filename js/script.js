@@ -28,7 +28,7 @@ function getCookie(name) {
 // Dodavanje event listenera za učitavanje DOM-a
 function loadProjects() {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'projects.json', true);
+  xhr.open('GET', 'json/projects.json', true);
 
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
@@ -82,7 +82,7 @@ function setLanguage(language) {
   setCookie('language', language, 7); // Pohrani jezik u kolačić na 7 dana
 
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', `lang/${language}.json`, true);
+  xhr.open('GET', `../lang/${language}.json`, true);
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       try {

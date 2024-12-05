@@ -29,7 +29,7 @@ const projectId = urlParams.get('id');
 // Učitaj detalje projekta
 function loadProjectDetails() {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'projects-detail.json', true);
+  xhr.open('GET', 'json/projects-detail.json', true);
 
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
