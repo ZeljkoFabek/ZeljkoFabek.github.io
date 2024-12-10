@@ -1,7 +1,29 @@
+const baseUrl = window.location.origin + window.location.pathname.replace(/index\.html$/, '');
+const language = getCookie('language');
+
+setCookie('baseUrl', baseUrl, 1);
+
 // Pozovi funkciju prilikom učitavanja stranice
 document.addEventListener('DOMContentLoaded', function() {
-  loadProjects();
-  setLanguage('en'); // Postavi zadani jezik
+  
+  console.log('pocetak: ' + baseUrl);
+
+  if (language === "") {
+    setLanguage('en');
+    loadProjects();
+  } else {
+    setLanguage(language);
+    loadProjects();
+  }
+  
+  if (baseUrl === "") {
+  } else {
+    baseUrl = getCookie('baseUrl');
+  }
+  
+  console.log('odabir: ' + baseUrl);
+  
+  xhr.open('GET', `${baseUrl}lang/${language}.json`, true);
 });
 
 // Postavi kolačić
@@ -9,7 +31,7 @@ function setCookie(name, value, days) {
   const d = new Date();
   d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
   const expires = "expires=" + d.toUTCString();
-  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  document.cookie = name + "=" + value + ";" + expires + ";path=/" + "; SameSite=Strict";
 }
 
 // Dohvati vrijednost kolačića
@@ -28,7 +50,8 @@ function getCookie(name) {
 // Dodavanje event listenera za učitavanje DOM-a
 function loadProjects() {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'json/projects.json', true);
+  
+  xhr.open('GET', `${baseUrl}json/projects.json`, true);
 
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
@@ -49,7 +72,7 @@ function loadProjects() {
 
             // Generiraj sadržaj kao link
             colDiv.innerHTML =
-            '<a href="' + project.url + '" target="_blank" class="text-decoration-none">' + 
+            '<a href="' + baseUrl + project.url + '" target="_self" class="text-decoration-none">' + 
             '<div class="card">' +
             '<img src="' + project.image + '" class="card-img-top" alt="' + translation.title + '">' +
             '<div class="card-body">' +
@@ -79,10 +102,11 @@ function loadProjects() {
 function setLanguage(language) {
   
   currentLanguage = language;         // Ažuriraj trenutni jezik
-  setCookie('language', language, 7); // Pohrani jezik u kolačić na 7 dana
+  setCookie('language', language, 1); // Pohrani jezik u kolačić na 7 dana
 
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', `../lang/${language}.json`, true);
+  xhr.open('GET', `${baseUrl}lang/${language}.json`, true);
+
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       try {

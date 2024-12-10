@@ -1,9 +1,11 @@
+const baseUrl = getCookie('baseUrl');
+
 // Funkcija za postavljanje kolačića
 function setCookie(name, value, days) {
   const d = new Date();
   d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
   const expires = "expires=" + d.toUTCString();
-  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  document.cookie = name + "=" + value + ";" + expires + ";path=/" + "; SameSite=Strict";
 }
 
 // Funkcija za dohvaćanje kolačića
@@ -29,7 +31,7 @@ const projectId = urlParams.get('id');
 // Učitaj detalje projekta
 function loadProjectDetails() {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'json/projects-detail.json', true);
+  xhr.open('GET', `${baseUrl}json/projects-detail.json`, true);
 
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
@@ -75,7 +77,10 @@ function loadProjectDetails() {
         for (var k = 0; k < project.screenshots.length; k++) {
           var colDiv = document.createElement('div');
           colDiv.className = 'col-md-4';
-          colDiv.innerHTML = '<img src="' + project.screenshots[k] + '" class="img-fluid" alt="Screenshot"><br><br>';
+          colDiv.innerHTML = '<a href="'+ baseUrl + project.screenshots[k] + '" target="_self" class="text-decoration-none">' +
+                             '<img src="' + project.screenshots[k] + '" class="img-fluid" alt="Screenshot"><br><br>' +
+                             '</a>';
+
           screenshotsContainer.appendChild(colDiv);
         }
       } catch (error) {
@@ -86,7 +91,6 @@ function loadProjectDetails() {
 
   xhr.send();
 }
-
 
 // Pokreni učitavanje podataka
 document.addEventListener('DOMContentLoaded', loadProjectDetails);
