@@ -1,4 +1,3 @@
-
 Informacije:
 
 Moje Internet stranice koje u javno objavljene na GitHub-u kao preyentacija mojih projekata koji su postavljeni javno na GitHub.
@@ -10,5 +9,3 @@ My web pages that are publicly published on GitHub as a presentation of my proje
 Informácie:
 
 Moje webové stránky, ktoré sú verejne publikované na GitHub ako prezentácia mojich projektov, ktoré sú verejne zverejnené na GitHub.
-
-TEST
